@@ -1,0 +1,13 @@
+<h2 class="title">Tasks</h2>
+
+<div *ngFor="let t of tasks" class="tasks">
+    <div align="left" >
+        {{ t.description | titlecase }}
+    </div>
+    <div align="left">
+        {{ t.priority }}
+        <div align="right">
+            {{ t.due | date:'longDate' }}
+        </div>
+    </div>
+</div>
